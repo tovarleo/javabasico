@@ -1,0 +1,43 @@
+public class Main
+{
+	public static void main(String[] args) {
+		
+		// enteros
+		int variable1=5;
+		byte variable2 = 98;
+		long variable3	= 88;
+		short variable4 = 54;
+	
+		System.out.println(variable1 );
+		System.out.println(variable2);
+		System.out.println(variable3);
+		System.out.println(variable4);
+		
+		// decimales
+		
+		double variable5 = 45.64d;
+		float variable6= 154.78f;
+		
+		System.out.println(variable5 );
+		System.out.println(variable6);
+		
+		// Texto
+		
+		char variable7 = 'B';
+		String variable8 = "hola estoy programando";
+		
+		System.out.println(variable7 );
+		System.out.println(variable8);
+		
+		// booleano
+		
+		int entero =55;
+		double decimal= 78.5d;
+		
+		boolean variable9 = entero < decimal;
+		
+		System.out.println(variable9 );
+	    
+	}
+}
+
