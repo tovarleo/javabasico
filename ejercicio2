@@ -1,0 +1,18 @@
+public class ejercicio2 {
+
+    private static String precio;
+
+    public static void main(String[] args) {
+        double precio = getPrice(180.78);
+        System.out.println(" el total es " + precio);
+
+    }
+
+    static double getPrice(double valor) {
+        double iva = 16;
+        double productoIva = (valor * iva) / 100;
+        double totalPricio = productoIva + valor;
+        return totalPricio;
+
+    }
+}
