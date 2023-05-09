@@ -1,0 +1,14 @@
+public class ejrcicio3 {
+    public static void main(String[] args) {
+
+        String[] mes = new String[]{" Enero ", " Febreo ", " Marzo ", " Abril ", " Mayo ", " Junio ", " Julio ",
+                " Agosto ", " Septiembre "," Noviembre "," Diciembre "  };
+
+
+        for(int i = 0; i < mes.length; i++) {
+            System.out.print(mes[i]);
+        }
+
+    }
+
+}
