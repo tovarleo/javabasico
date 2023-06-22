@@ -1,0 +1,111 @@
+package Ejercicio4.Clase;
+
+public class SmartDrive {
+
+    String modelo;
+    String marca;
+    String color;
+    int year;
+    double precio;
+
+
+    public SmartDrive(){
+
+    }
+
+    public SmartDrive (String modelo, String marca, String color, int year, double precio ){
+
+        this.modelo = modelo;
+        this.marca = marca;
+        this.color = color;
+        this.year = year;
+        this.precio = precio;
+
+
+    }
+
+}
+
+public class SmartPhone extends SmartDrive{
+
+    String procesador;
+    int ram;
+
+
+    public SmartPhone(){
+        super();
+
+    }
+
+    public SmartPhone(String procesador, int ram) {
+        this.procesador = procesador;
+        this.ram = ram;
+    }
+
+    public SmartPhone(String modelo, String marca, String color, int year, double precio, String procesador, int ram) {
+        super(modelo, marca, color, year, precio);
+        this.procesador = procesador;
+        this.ram = ram;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "procesador='" + procesador + '\'' +
+                ", ram=" + ram +
+                ", modelo='" + modelo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
+}
+
+public class SmartWatch extends SmartDrive{
+
+    double peso;
+    int diametro;
+
+
+    public SmartWatch(){
+
+    }
+
+    public SmartWatch(double peso, int diametro) {
+        this.peso = peso;
+        this.diametro = diametro;
+    }
+
+    public SmartWatch(String modelo, String marca, String color, int year, double precio, double peso, int diametro) {
+        super(modelo, marca, color, year, precio);
+        this.peso = peso;
+        this.diametro = diametro;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartWatch{" +
+                "peso=" + peso +
+                ", diametro=" + diametro +
+                ", modelo='" + modelo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
+}
+
+public class Main {
+
+    public static void main(String [] args) {
+
+    SmartPhone smartPhone = new SmartPhone("Mediatek Helio G96 2.05GHz","sonny", "dorado",2015, 152.55,"HG154kz",32);
+
+
+    SmartWatch smartWatch = new SmartWatch("Mediatek H g89 1.565GHz","xiaomi","negro",2022,500.55,0.100,40);
+
+        System.out.println(smartPhone);
+        System.out.println(smartWatch);
+
+
+
+    }
+}
